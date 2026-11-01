@@ -8,7 +8,7 @@ have one place to live.
 
 ## Install
 
-Get the addon from CurseForge (link coming with the first release), or unzip it into
+Get the addon from [CurseForge](https://www.curseforge.com/projects/1778257), or unzip it into
 `World of Warcraft/_retail_/Interface/AddOns/` so the folder is `AddOns/LowerMyKeystone`.
 Then reload the game.
 
