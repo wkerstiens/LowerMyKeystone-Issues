@@ -14,18 +14,21 @@ Then reload the game.
 
 ## Using it
 
-- Talk to Lindormi. A panel under her dialogue offers preset amounts, a custom amount and a cancel button.
-- `/lowerkey <levels>` lowers your key by that many levels, for example `/lowerkey 3`.
-- `/lowerkey stop` cancels a run in progress.
-- `/lowerkey key <KEY|none>` binds a key to "Interact with Target" while a run waits for you.
+Screenshots are on the [CurseForge page](https://www.curseforge.com/projects/1778257).
+
+- Talk to Lindormi. A panel under her dialogue offers preset amounts, a custom amount and a cancel button. The addon list button next to the minimap (or `/lowerkey show`) opens the same picker anywhere.
+- `/lowerkey <levels>` lowers your key by that many levels, for example `/lowerkey 3`. `/lowerkey stop` cancels a run.
+- `/lowerkey key <KEY|none>` makes one key target Lindormi and then open her dialogue while a run waits for you.
+- `/lowerkey confirm`, `min`, `presets`, `resetpos` change the settings.
+- `/lowerkey debug` prints the addon's state; `/lowerkey debug on` logs each step.
 
 Things worth knowing:
 
 - Lindormi lowers one level per conversation. Between levels the addon shows a "Target Lindormi"
-  button; left-click it, then right-click Lindormi (or press your interact key) to continue.
-  Addons cannot open an NPC conversation themselves, so that step is yours.
-- The run follows your real keystone level and stops at the target level or +2.
-- The first run matches Lindormi's English option text. After that the option is remembered.
+  button (shift-drag to move it). Addons cannot open an NPC conversation themselves, so that step is yours.
+- The run follows your real keystone level and stops at the target level or your minimum (+2 by default).
+- The English option text is recognised automatically. On another language, open Lindormi's dialogue and
+  run `/lowerkey learn`, then `/lowerkey learn <number>` for the option that lowers your key.
 
 ## Posting an issue
 
@@ -36,5 +39,6 @@ Things worth knowing:
    - the addon version (the AddOns list on the character-select screen)
    - your keystone level before and after, and how many levels you asked for
    - what Lindormi's dialogue did after each level (goodbye page, closed, confirmation popup)
+   - the output of `/lowerkey debug` (for a run that misbehaves, turn on `/lowerkey debug on` first)
    - any Lua error text (an addon such as BugSack makes these easy to copy)
    - a screenshot, if it is a display problem

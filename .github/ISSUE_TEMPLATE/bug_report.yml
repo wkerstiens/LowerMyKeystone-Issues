@@ -35,6 +35,12 @@ body:
         - "Other"
         - "Not applicable"
   - type: textarea
+    id: debug
+    attributes:
+      label: "/lowerkey debug output"
+      description: Run it with Lindormi's dialogue open. For a run that misbehaves, run /lowerkey debug on first and paste the chat lines. Remove anything you would rather not share.
+      render: text
+  - type: textarea
     id: error
     attributes:
       label: Lua error text
